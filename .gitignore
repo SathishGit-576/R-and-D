@@ -1,0 +1,28 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Environment files
+.env
+.env.local
+config.local.php
+
+# Uploads / temp
+uploads/
+tmp/
+temp/
+
+# Archives
+*.zip
+
+# Dependency folders if any
+vendor/
+node_modules/
+fpdf_temp.zip
