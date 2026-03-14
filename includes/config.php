@@ -2,7 +2,7 @@
 $host = "sql210.infinityfree.com";
 $db   = "if0_41383503_Tower_1";
 $user = "if0_41383503";
-$pass = "YOUR_DATABASE_PASSWORD";
+$pass = "8610700SA";
 $charset = "utf8mb4";
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
