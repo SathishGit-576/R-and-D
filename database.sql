@@ -1,8 +1,3 @@
--- Tower Daily Traffic Signal Dashboard System Database Schema
--- Default database name: tower_db
-
-CREATE DATABASE IF NOT EXISTS tower_db;
-USE tower_db;
 
 -- 1. Users Table
 CREATE TABLE IF NOT EXISTS users (

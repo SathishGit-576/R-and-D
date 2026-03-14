@@ -1,12 +1,11 @@
 <?php
-$host = getenv('MYSQLHOST') ?: '127.0.0.1';
-$port = getenv('MYSQLPORT') ?: '3306';
-$db   = getenv('MYSQLDATABASE') ?: 'tower_db';
-$user = getenv('MYSQLUSER') ?: 'root';
-$pass = getenv('MYSQLPASSWORD') ?: '';
-$charset = 'utf8mb4';
+$host = "sql210.infinityfree.com";
+$db   = "if0_41383503_Tower_1";
+$user = "if0_41383503";
+$pass = "YOUR_DATABASE_PASSWORD";
+$charset = "utf8mb4";
 
-$dsn = "mysql:host={$host};port={$port};dbname={$db};charset={$charset}";
+$dsn = "mysql:host=$host;dbname=$db;charset=$charset";
 
 $options = [
     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
@@ -17,6 +16,6 @@ $options = [
 try {
     $pdo = new PDO($dsn, $user, $pass, $options);
 } catch (PDOException $e) {
-    die("DB ERROR | host=$host | port=$port | db=$db | user=$user | " . $e->getMessage());
+    die("Database connection failed: " . $e->getMessage());
 }
 ?>
